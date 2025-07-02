@@ -1,0 +1,870 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+.container-trick{
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container-trick__paddin-top{
+    padding-top: 50px;
+}
+
+body{
+    background: #000;
+    color: white;
+}
+
+.wrap{
+    padding: 0 120px;
+}
+
+.grid{
+    display: grid;
+}
+
+.title-Another-Section{
+    font-size: 58px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-text{
+    font-size: 1.2vw;
+    max-width: 320px;
+    text-align: justify;
+}
+
+/* header */
+
+.header__burger-menu{
+    display: none;
+}
+
+/* header-floor 1 */
+
+.header__floor-one{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__img-logo{
+    padding-right: 50px;
+}
+
+.header__menu{
+    position: relative;
+    flex-grow: 1;
+}
+
+.header__list-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header__list-items a{
+    color: white;
+    font-size: 16px;
+}
+
+.header__img-search{
+    padding: 0 31px;
+}
+
+.header__img-basket{
+    padding-left: 31px;
+}
+
+/* header-floor 2 */
+
+.header__floor-two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.header__floor-two a{
+    color: white;
+    font-size: 16px;
+}
+
+.header__logo{
+    font-size: large;
+    font-weight: bold;
+    flex-grow: 1;
+    font-size: 18px;
+}
+
+.header__floor-two a{
+    padding: 0 25px;
+}
+
+.buttuon-buy{
+    background-color: #007dea;
+    border-radius: 6px;
+    height: 25px;
+    width: 70px;
+    color: white;
+}
+
+/* header end */
+
+/* main */
+
+/* section 1 */
+.wrap_wrap-top{
+    padding-top: 50px;
+}
+
+.AirPods_Pro{
+    text-align: center;
+    position: relative;
+}
+
+.conteiner-img{
+    display: block;
+    margin: 0 auto;
+}
+
+.AirPods_Pro__img{
+    max-width: 52vw;
+    height: auto;
+}
+
+.AirPods_Pro__text-AirPodsPro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    font-size: 12vw;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.AirPods_Pro__link-learn-more{
+    color: #fff;
+    font-size: 18px;
+    padding-right: 15px;
+    margin-top: 30px;
+
+}
+
+.AirPods_Pro__bBuyNow{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    height: 30px;
+    width: 100px;
+    margin-top: 30px;
+}
+
+/* section 2 */
+
+.face-style{
+    margin-top: 120px;
+}
+
+.face-style__title{
+    text-align: center;
+    font-size: 4.5vw;
+    padding-bottom: 50px;
+}
+
+.face-style__img{
+    object-fit: cover;
+    max-width: 70%;
+    max-height: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* section 3 */
+.section-comfort__title{
+    font-size: 6vw;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+
+.grid_threeColumn{
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: end;
+    padding-bottom: 10vw;
+}
+
+.grid__items:nth-child(1){
+    overflow: hidden;
+    max-height: 660px;
+}
+.grid__items:nth-child(2){
+    display: grid;
+    place-items: center;
+}
+.grid__items:nth-child(3){
+    overflow: hidden;
+    max-height: 660px;
+}
+
+.hearphoneL , .hearphoneR {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.grid__text{
+    text-align: justify;
+    font-size: 18px;
+}
+/* section 4 */
+
+.section-AQ{
+    position: relative;
+    background-image: url('../img/bgi_section-4.png');
+    background-repeat: no-repeat;       
+    background-size: cover;             
+    background-position: center;  
+    width: 100%;
+    height: 700px;
+    border-radius: 20px;
+}
+
+.section-AQ__text{
+    display: block;
+    max-width: 350px;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
+.section-AQ-three{
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+.section-AQ-two{
+    font-size: 38px;
+    font-weight: bold;
+    color: black;
+    padding-top: 20px;
+}
+
+
+/* section 5 */
+.section-trip-fit{
+    position: relative;
+    padding-top: 300px;
+    margin-top: 200px;
+}
+
+.section-trip-fit__hearphoneL{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 500px;
+    height: auto;
+}
+
+.section-trip-fit__hearphoneR{
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 500px;
+    height: auto;
+}
+
+.section-trip-fit_decor-text{
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+/* section 6 */
+
+.section-active-noise{
+    margin-top: 200px;
+}
+
+.section-active-noise__title3{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-active-noise__title2{
+    font-size: 68px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 150px;
+}
+
+.section-active-noise_decor-text{
+    margin-bottom: 30px;
+    color: white;
+}
+
+.section-active-noise_decor-text:nth-child(4){
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.section-active-noise_decor-text:nth-child(6){
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.section-active-noise__img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+/* section 7 */
+.section-six{
+    position: relative;
+    background: #ffffff;
+    width: 100%;
+    height: 800px;
+    border-radius: 20px;
+}
+
+.section-six__bg-img{
+    max-width: 100%;
+}
+
+.section-six__invisible-earphone{
+    max-width: 200px;
+    position: absolute;
+    top: -30px;
+    left: 15%;
+    z-index: 1;
+}
+
+.section-six__chip-earphone{
+    max-width: 400px;
+    position: absolute;
+    bottom: -40px;
+    left: 35%;
+    z-index: 1;
+}
+
+.section-six_decor-text{
+    color: black;
+}
+
+.section-six_decor-text:nth-child(4){
+    padding-top: 50px;
+    margin-left: 60%;
+}
+
+.section-six_decor-text:nth-child(5){
+    padding-top: 100px;
+    margin-left: 39%;
+}
+
+.section-six_decor-text:nth-child(3){
+    padding-top: 110px;
+    margin: 0 450px;
+}
+
+.section-six__line-img{
+    max-width: 36px;
+    position: absolute;
+    top: 57%;
+    left: 53%;
+}
+
+/* section 8 */
+
+.section-parts{
+    position: relative;
+}
+
+.section-parts__overLine{
+    max-width: 110px;
+    position: absolute;
+    top: 165px;
+    left: 430px;
+}
+
+.section-parts__img-headphone-parts{
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+
+.section-parts__underLine{
+    max-width: 110px;
+    position: absolute;
+    top: 440px;
+    left: 700px;
+}
+
+.section-parts_decor-text:nth-child(1){
+    padding-top: 100px;
+    padding-bottom: 150px;
+    margin-left: 15%;
+}
+
+.section-parts_decor-text:nth-child(5){
+    padding-bottom: 150px;
+    margin-left: 63%;
+}
+
+/* section 9 */
+
+.right-choose{
+    padding-top: 35px;
+    text-align: center;
+}
+
+.caseAir{
+    position: relative;
+    background-image: url('../img/ezgif.com-gif-maker.png');
+    background-repeat: no-repeat;       
+    background-size: cover;             
+    background-position: center;  
+    width: 100%;
+    height: 700px;
+    border-radius: 20px;
+}
+
+.caseAir_PosTitle{
+    position: absolute;
+    top: 0;
+    left: 38%;
+    color: #000;
+}
+
+.caseAir__img{
+    max-width: 100%;
+}
+
+.grid_three-column{
+    padding-top: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+}
+
+.grid_aling-items{
+    align-items: end;
+}
+
+.grid__items{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    max-width: 100%;
+    align-items: center;
+    align-content: start;
+}
+
+.grid__tilte{
+    font-size: 18px;
+}
+
+.grid__hours{
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.grid__text{
+    font-size: 18px;
+    text-align: center;
+    max-width: 230px;
+}
+
+.right-choose__link{
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.right-choose__questions{
+    display: block;
+    margin: 0 auto;
+    max-width: 700px;
+    padding-top: 100px;
+}
+
+.grid__img{
+    max-width: 250px;
+}
+
+.grid__name-Air{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.grid__genration{
+    font-size: 16px;
+}
+
+.grid__price-Air{
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.grid__buy{
+    width: 100px;
+    height: 35px;
+    background-color: #000;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+.grid__learn-more{
+    color: white;
+}
+
+
+/* section 10 */
+
+.white-forms{
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.white-forms__input-name{
+    border: 1px solid rgb(62, 62, 62);
+    border-radius: 10px;
+    width: 300px;
+    height: 35px;
+    color: #000;
+}
+
+.white-forms__input-phone{
+    border: 1px solid rgb(62, 62, 62);
+    border-radius: 10px;
+    width: 300px;
+    height: 35px;
+    color: #000;
+}
+
+.white-forms__buttons{
+    background-color: #fff;
+    border: 1px solid rgb(62, 62, 62);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.white-forms_flex-direct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.white-forms__questions{
+    color: #000;
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+
+.white-forms__name, .white-forms__phone{
+    color: #000;
+}
+
+.container{
+    width: 300px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+/* footer */
+
+.footer__flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+
+.footer__avtor{
+    flex-grow: 1;
+    text-align: center;
+    padding-left: 250px;
+}
+
+.footer_x{
+    display: block;
+    margin: 0 auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.conIcon{
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    border-radius: 100px;
+}
+
+/* main end*/
+
+.header__burger-menu{
+    width: 35px;
+    height: 35px;
+    display: none;
+}
+
+
+/* media */
+
+@media (max-width:1600px){
+    .header__list-links{
+        opacity: 1;
+    }
+    .section-text{
+        font-size: 1.2vw;
+        max-width: 310px;
+    }
+}
+
+@media (max-width:1200px){
+    .header__list-links{
+        opacity: 1;
+    }
+    .AirPods_Pro__text-AirPodsPro{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 30%);
+        font-size: 14vw;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    .section-text{
+        font-size: 2vw;
+        max-width: 380px;
+    }
+    .section-AQ{
+        width: 100%;
+        height: 600px;
+        border-radius: 20px;
+    }
+}
+
+@media (min-width:961px){
+    .header__list-links{
+        opacity: 1;
+    }
+}
+
+@media (max-width:960px){
+
+    .header__burger-menu{
+        display: block;
+        margin-right: 20px;
+    }
+    .header__container-img{
+        flex-grow: 1;
+    }
+    .header__list-links{
+        opacity: 0;
+        position: absolute;
+        top: 20.5px;
+        right: -180px;
+        width: 180px;
+        height: 300px;
+        background: rgb(16, 16, 16);
+        box-shadow: inset 0 0 10px rgba(133, 133, 133, 0.5);
+        flex-direction: column;
+        align-items: center;
+        z-index: 100;
+        border-radius: 20px;
+    }
+    .section-AQ{
+        width: 100%;
+        height: 480px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width:760px){
+    .section-text{
+        font-size: 2.6vw;
+    }
+    .section-AQ{
+        width: 100%;
+        height: 400px;
+        border-radius: 20px;
+    }
+    .section-AQ__text{
+
+        top: 37%;
+        left: 10%;
+    }
+    .section-AQ-three{
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
+    .section-AQ-two{
+        font-size: 32px;
+        font-weight: bold;
+        color: black;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width:480px){
+    .AirPods_Pro__text-AirPodsPro{
+        transform: translate(-50%, 5%);
+        font-size: 16vw;
+    }
+    .face-style__title{
+        font-size: 6vw;
+    }
+    .hearphoneL , .hearphoneR {
+        max-width: 70%;
+    }
+    .section-text{
+        font-size: 4vw;
+        max-width: 260px;
+        text-align: justify;
+        padding-top: 20px;
+    }
+    .grid__items:nth-child(1){
+        grid-area: L;
+    }
+    .grid__items:nth-child(2){
+        grid-area: C;
+    }
+    .grid__items:nth-child(3){
+        grid-area: R;
+    }
+    .grid_threeColumn{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "L L R R"
+                             "C C C C";
+        align-items: start;
+    }
+    .section-AQ{
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+    }
+    .section-AQ__text{
+        max-width: 300px;
+        top: 37%;
+        left: 10%;
+    }
+    .section-AQ-three{
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
+    .section-AQ-two{
+        font-size: 22px;
+        font-weight: bold;
+        color: black;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width:320px){
+    .AirPods_Pro__text-AirPodsPro{
+        transform: translate(-50%, 15%);
+        font-size: 16vw;
+    }
+    .face-style__title{
+        font-size: 6vw;
+    }
+    .hearphoneL , .hearphoneR {
+        max-width: 70%;
+    }
+    .section-text{
+        font-size: 5vw;
+        max-width: 250px;
+        text-align: justify;
+        padding-top: 20px;
+    }
+    .section-AQ{
+        width: 100%;
+        height: 250px;
+        border-radius: 20px;
+    }
+    .section-AQ__text{
+        max-width: 200px;
+        top: 37%;
+        left: 10%;
+    }
+    .section-AQ-three{
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+    }
+    .section-AQ-two{
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+        padding-top: 10px;
+    }
+}

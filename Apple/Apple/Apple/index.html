@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="..//Apple/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <header class="header"> 
+        <div class="container-trick">
+            <div class="header__floor-one">
+                <div class="header__container-img">
+                    <img src="../Apple/img/apple.png" alt="apple" class="header__img-logo">
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list-links" id="listLinks">
+                        <li class="header__list-items"><a href="#">Store</a></li>
+                        <li class="header__list-items"><a href="#">Mac</a></li>
+                        <li class="header__list-items"><a href="#">iPhone</a></li>
+                        <li class="header__list-items"><a href="#">iPad</a></li>
+                        <li class="header__list-items"><a href="#">Watch</a></li>
+                        <li class="header__list-items"><a href="#">AirPods</a></li>
+                        <li class="header__list-items"><a href="#">TV & Home</a></li>
+                        <li class="header__list-items"><a href="#">Only on Apple</a></li>
+                        <li class="header__list-items"><a href="#">Accessories</a></li>
+                        <li class="header__list-items"><a href="#">Support</a></li>
+                    </ul>
+                </nav>
+                <div class="header_burger">
+                    <img src="../Apple/img/free-icon-burger-menu-9451364.png" id="toggleImage" alt="apple" class="header__burger-menu">
+                    <script>
+                        let isTrue = false;
+                    
+                        // Находим изображение по ID
+                        const image = document.getElementById('toggleImage');
+                        const listlinks = document.getElementById('listLinks');
+                        
+                       
+                        // Добавляем обработчик события клика
+                        image.addEventListener('click', function() {
+                            // Переключаем значение флага
+                            isTrue = !isTrue;
+            
+                    
+                            // Вы можете выполнить любое действие в зависимости от значения isTrue
+                            if (isTrue) {
+                                listlinks.style.opacity = 1;
+                            } else {
+                                listlinks.style.opacity = 0;
+                            }
+                        });
+                    </script>
+                </div>
+                <img src="../Apple/img/magnifying-glass-solid.png" alt="search" class="header__img-search">
+                <img src="../Apple/img/bag.png" alt="basket" class="header__img-basket">
+            </div>
+            <div class="header__floor-two">
+                <h2 class="header__logo">AirPods Pro</h2>
+                <a href="#" class="header__list-items">Tech Specs</a>
+                <a href="#" class="header__list-items">Compare</a>
+                <button class="buttuon-buy">Buy Now</button>
+            </div>   
+        </div>
+    </header>
+    <main>
+        <div class="container-trick container-trick__paddin-top">
+            <section class="AirPods_Pro">
+                <div class="conteiner-img">
+                    <img src="../Apple/img/caseAir.png" alt="caseAir" class="AirPods_Pro__img">
+                </div>
+                <h2 class="AirPods_Pro__text-AirPodsPro">AirPods Pro</h2>
+                <a href="#" class="AirPods_Pro__link-learn-more">Learn more</a>
+                <button class="AirPods_Pro__bBuyNow">Buy Now</button>
+            </section>
+            <section class="face-style">
+                <h2 class="face-style__title">Magic like you've never heard</h2>
+                <img src="..//Apple/img/face.png" alt="face" class="face-style__img">
+            </section>
+            <section class="section-comfort">
+                <h2 class="section-comfort__title">Comfort</h2>
+                <div class="grid grid_threeColumn">
+                    <div class="grid__items">
+                        <img src="../Apple/img/hearphoneL.png" alt="hearphoneL" class="hearphoneL">
+                    </div>
+                    <div class="grid__items">
+                        <p class="section-text"> We have redesigned the ergonomics of comfort, 
+                            resulting in a new category of in-ear headphones with an amazing
+                            seal for active noise cancellation. You won't just hear music; 
+                            you'll also feel it.</p>
+                    </div>
+                    <div class="grid__items">
+                        <img src="../Apple/img/hearphoneR.png" alt="hearphoneR" class="hearphoneR">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+            <section class="section-AQ">
+                <article class="section-AQ__text">
+                    <h3 class="section-AQ-three">Audio Quality</h3>
+                    <h2 class="section-AQ-two">Everything you hear is unheared of</h2>
+                </article>
+            </section>
+        
+        <div class="wrap wrap_wrap-top">
+            <section class="section-trip-fit">
+                <img src="../Apple/img/L.png" alt="L" class="section-trip-fit__hearphoneL">
+                <p class="section-text section-trip-fit_decor-text"> Choose from three sizes of soft, flexible silicone tips 
+                    that click into place. Find the best fit-and get the best sound-by using the Ear Tip Fit Test.</p>
+                <p class="section-text section-trip-fit_decor-text"> These internally tapered tips confirm to your ear shape, 
+                    keeping Airpods Pro secure. Andwith vents helping equalize pressure, you feel like there's nothing in your ears.</p>
+                <img src="../Apple/img/R.png" alt="R" class="section-trip-fit__hearphoneR">
+            </section>
+            <section class="section-active-noise">
+                <h3 class="section-active-noise__title3">Active Noise Cancellation</h3>
+                <h2 class="section-active-noise__title2">Sounds That Cut The Noise</h2>
+                <p class="section-text section-active-noise_decor-text">An outward-facing microphone detects external sound</p>
+                <p class="section-text section-active-noise_decor-text">AirPods Pro then counter it with equal anti-noise, cancelling the external sound before you hear it</p>
+                <img src="../Apple/img/Apple Airpods Pro Ear With Music Waves - 2086x902.png" alt="Music Waves" class="section-active-noise__img">
+                <p class="section-text section-active-noise_decor-text">An inward-facing microphone listens inside your 
+                    ear for unwanted sound, which is also eliminated 
+                    with anti-noise</p>
+                    <h2 class="title-Another-Section">Specifications</h2>
+            </section>
+        </div>
+
+            <section class="section-six">
+                <img src="../Apple/img/Layer 3.png" alt="#" class="section-six__invisible-earphone">
+                <img src="../Apple/img/Layer 4.png" alt="#" class="section-six__chip-earphone">
+                <!-- <img src="../Apple/img/ezgif.com-gif-maker (3).png" alt="#" class="section-six__bg-img"> -->
+                <p class="section-text section-six_decor-text">The amplifer powers the speaker driver to remove background noise and works with th H1 chip to control listening levels.</p>
+                <p class="section-text section-six_decor-text">A super-efficifient high dynamic range amplifier produces pure, incredibly clear sound while also extending battery life.</p>
+                <p class="section-text section-six_decor-text">The Apple-deigned H1 chip employs 10 audio cores, creating incredbly low audio processing latency that enables real-time noise cancellation.</p>
+                <img src="../Apple/img/Line 1.png" alt="#" class="section-six__line-img">
+            </section>
+
+        <div class="wrap wrap_wrap-top">
+            <section class="section-parts">
+                <p class="section-text section-parts_decor-text">  Powerfull bass is delivered by a custom- built high -excursion, low- distortion speaker driver.</p>
+                <img src="../Apple/img/LineW 1.png" alt="LineW" class="section-parts__overLine">
+                <img src="../Apple/img/Ellipse 1.png" alt="Ellipse" class="section-parts__img-headphone-parts">
+                <img src="../Apple/img/LineW 1.png" alt="LineW" class="section-parts__underLine">
+                <p class="section-text section-parts_decor-text">  An inward-facing microphone hears sound as you do. Airpods Pro then fine-tune the audio by adjusting the mid and low frequencies.</p>
+                <h6 class="section-active-noise__title3">Battery</h6>
+                <h2 class="title-Another-Section">Charge wirelessly</h2>
+            </section>
+        </div>
+
+            <section class="caseAir">
+                <h2 class="title-Another-Section caseAir_PosTitle">Use tirelessly</h2>
+                <!-- <img src="../Apple/img/ezgif.com-gif-maker.png" alt="ezgif" class="caseAir__img"> -->
+            </section>
+
+        <div class="wrap wrap_wrap-top">
+            <section class="right-choose">
+                <div class="grid grid_three-column">
+                    <div class="grid__items">
+                        <h6 class="grid__tilte">More than</h6>
+                        <h2 class="grid__hours">24 hrs</h2>
+                        <p class="grid__text">of listening time with multiple additional charger in the case</p>
+                    </div>
+                    <div class="grid__items">
+                        <h6 class="grid__tilte">Upto</h6>
+                        <h2 class="grid__hours">4.5 hrs</h2>
+                        <p class="grid__text">of listening time on one charge</p>
+                    </div>
+                    <div class="grid__items">
+                        <h6 class="grid__tilte">Around</h6>
+                        <h2 class="grid__hours">1 hrs</h2>
+                        <p class="grid__text">of listening time on only 5 mintues of charging</p>
+                    </div>
+                </div>
+
+                <a href="#" class="right-choose__link">Shop Now</a>
+                <h2 class="title-Another-Section right-choose__questions">Which AirPods are Right For You?</h2>
+                <div class="grid grid_three-column grid_aling-items">
+                    <div class="grid__items">
+                        <img src="../Apple/img/[CITYPNG.COM]Opened Airpods Pro Apple Case Front View - 854x720 copy1.png" alt="" class="grid__img">
+                        <h3 class="grid__name-Air">Airpods</h3>
+                        <h4 class="grid__genration">2nd Genration</h4>
+                        <h2 class="grid__price-Air">$129</h2>
+                        <button class="grid__buy">Buy</button>
+                        <a href="#" class="grid__learn-more">Learn more ></a>
+                    </div>
+                    <div class="grid__items">
+                        <img src="../Apple/img/tinywow2.png" alt="" class="grid__img">
+                        <h3 class="grid__name-Air">AirPods Pro</h3>
+                        <h4 class="grid__genration">3rd Genration</h4>
+                        <h2 class="grid__price-Air">$329</h2>
+                        <button class="grid__buy">Buy</button>
+                        <a href="#" class="grid__learn-more">Learn more ></a>
+                    </div>
+                    <div class="grid__items">
+                        <img src="../Apple/img/[CITYPNG.COM]Opened Airpods Pro Apple Case Front View - 854x720 cop3.png" alt="" class="grid__img">
+                        <h3 class="grid__name-Air">AirPods Ace</h3>
+                        <h4 class="grid__genration">2nd Genration</h4>
+                        <h2 class="grid__price-Air">$229</h2>
+                        <button class="grid__buy">Buy</button>
+                        <a href="#" class="grid__learn-more">Learn more ></a>
+                    </div>
+                </div>
+                <h2 class="right-choose__questions title-Another-Section">Questions Left?</h2>
+            </section>
+        </div>
+
+            <section class="white-forms">
+                <h2 class="white-forms__questions title-Another-Section">We will be happy to call you back and consult you</h2>
+                <form action="#" class="white-forms_flex-direct">
+                    <div class="container white-forms_position">
+                        <label for="name" class="white-forms__name">Your name</label>
+                    </div>
+                    <input type="text" id="name" class="white-forms__input-name">
+                    <div class="container white-forms_position">
+                        <label for="phone" class="white-forms__phone">Your phone</label>
+                    </div>
+                    <input type="number" id="phone" class="white-forms__input-phone">
+                    <button class="white-forms__buttons">Send</button>
+                </form>
+            </section>
+
+    </main>
+    <footer>
+        <div class="wrap wrap_wrap-top footer__flex">
+            <img src="../Apple/img/AppleFot.png" alt="#">
+            <h6 class="footer__avtor">Senior UI/UX Designer - Design By Tariq Ahmed</h6>
+            <div class="conIcon">
+                <img src="../Apple/img/FB.png" alt="#" class="footer_x">
+            </div>
+            <div class="conIcon">
+                <img src="../Apple/img/X.png" alt="#" class="footer_x">
+            </div>
+            <div class="conIcon">
+                <img src="../Apple/img/inc.png" alt="#" class="footer_x">
+            </div>
+            <div class="conIcon">
+                <img src="../Apple/img/instb.png" alt="#" class="footer_x">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
